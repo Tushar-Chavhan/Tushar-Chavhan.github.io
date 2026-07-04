@@ -1,24 +1,18 @@
 (function () {
+
   const CONTACT_CONFIG = {
-    // Option 1: Formspree sends the message to your email inbox.
-    
-  const CONTACT_CONFIG = {
-    // Left blank so the script skips Formspree and defaults to Google Forms this is option second to collect information on direct my email
-    // Example: "https://formspree.io/f/abcdwxyz"
-    formspreeEndpoint: "",
+    // Formspree sends the message to your email inbox.
+    formspreeEndpoint: "https://formspree.io/f/mbdvqerb",
 
     // This is the background submission link you verified
-    // This is the first optio to collect the information using google forms, below is the link for the same.
     googleFormEndpoint: "https://docs.google.com/forms/d/e/1FAIpQLSe43itcw-8gcPvGTCDIHL6nyP6jhRHb0eEF10XyxPlVuSjRug/formResponse",
     googleFields: {
-      name: "entry.1743606706",
-      email: "entry.1738725458",
-      mobile: "entry.444985226",
-      message: "entry.245812975"
+      name: "1743606706",
+      email: "1738725458",
+      mobile: "444985226",
+      message: "245812975"
     }
-  };
-
-
+  }; // Fixed: Removed the premature function closure block here
 
   const header = document.querySelector("[data-header]");
   const nav = document.querySelector("[data-nav]");
@@ -179,7 +173,7 @@
           .map((result) => result.service);
 
         if (sentServices.length === 0) {
-          formStatus.textContent = "Contact form setup is pending. Add your Formspree and Google Forms values in js/app.js. See CONTACT_SETUP.md.";
+          formStatus.textContent = "Contact form setup is pending. Add your Formspree and Google Forms values in js/app.js.";
           return;
         }
 
@@ -196,4 +190,4 @@
 
     });
   }
-})();
+})(); // Fixed: Properly closed the single wrapper at the very bottom
