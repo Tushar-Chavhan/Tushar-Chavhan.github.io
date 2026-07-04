@@ -1,19 +1,24 @@
 (function () {
   const CONTACT_CONFIG = {
     // Option 1: Formspree sends the message to your email inbox.
+    
+  const CONTACT_CONFIG = {
+    // Left blank so the script skips Formspree and defaults to Google Forms this is option second to collect information on direct my email
     // Example: "https://formspree.io/f/abcdwxyz"
-    formspreeEndpoint: "PASTE_YOUR_FORMSPREE_ENDPOINT_HERE",
+    formspreeEndpoint: "",
 
-    // Option 2: Google Forms stores the message in Google Forms/Sheets.
-    // Example: "https://docs.google.com/forms/d/e/FORM_ID/formResponse"
-    googleFormEndpoint: "PASTE_YOUR_GOOGLE_FORM_ACTION_URL_HERE",
+    // This is the background submission link you verified
+    // This is the first optio to collect the information using google forms, below is the link for the same.
+    googleFormEndpoint: "https://docs.google.com/forms/d/e/1FAIpQLSe43itcw-8gcPvGTCDIHL6nyP6jhRHb0eEF10XyxPlVuSjRug/formResponse",
     googleFields: {
-      name: "PASTE_GOOGLE_NAME_ENTRY_ID_HERE",
-      email: "PASTE_GOOGLE_EMAIL_ENTRY_ID_HERE",
-      mobile: "PASTE_GOOGLE_MOBILE_ENTRY_ID_HERE",
-      message: "PASTE_GOOGLE_MESSAGE_ENTRY_ID_HERE"
+      name: "entry.1743606706",
+      email: "entry.1738725458",
+      mobile: "entry.444985226",
+      message: "entry.245812975"
     }
   };
+
+
 
   const header = document.querySelector("[data-header]");
   const nav = document.querySelector("[data-nav]");
