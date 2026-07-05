@@ -177,7 +177,7 @@
           return;
         }
 
-        formStatus.textContent = `Thanks ${data.name}. Your message was sent to: ${sentServices.join(" and ")}.`;
+        formStatus.textContent = `Thanks ${data.name} for contacting me. I have received your message and will get back to you as soon as possible.`;
         contactForm.reset();
       } catch (error) {
         formStatus.textContent = "Sorry, the message could not be sent. Please check your contact setup values.";

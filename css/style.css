@@ -638,3 +638,18 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+/* Fixes the text breaking behavior on your paragraphs */
+.contact-list p {
+  word-break: break-all; /* Allows the long link text to split naturally at the end of the line */
+}
+
+/* This targets the wrapped lines specifically */
+.link-wrapper {
+  display: inline;
+}
+
+/* If a link wraps to a second line, this pushes only the second line forward */
+.link-wrapper a {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
