@@ -1,7 +1,8 @@
-/* ===================================================
-   MAINTENANCE PAGE
-   Version : 2.0
-=================================================== */
+/* ===========================================================
+   WEBSITE UNDER MAINTENANCE
+   Version : Final
+   Author  : ChatGPT
+   =========================================================== */
 
 *{
     margin:0;
@@ -9,21 +10,16 @@
     box-sizing:border-box;
 }
 
-html,
-body{
+html{
     width:100%;
     height:100%;
-    overflow:hidden;
-    font-family:"Segoe UI",Arial,sans-serif;
-    background:#030712;
-    color:#ffffff;
 }
 
-/* ===========================
-   BODY
-=========================== */
-
 body{
+
+    min-height:100vh;
+
+    overflow:hidden;
 
     display:flex;
 
@@ -33,10 +29,16 @@ body{
 
     position:relative;
 
+    font-family:"Segoe UI",Arial,sans-serif;
+
+    color:#ffffff;
+
+    background:#030712;
+
 }
 
 /* ===========================
-   BACKGROUND
+   Animated Background
 =========================== */
 
 .background{
@@ -46,22 +48,23 @@ body{
     inset:0;
 
     background:
-    radial-gradient(circle at top left,#2563eb33 0%,transparent 40%),
-    radial-gradient(circle at bottom right,#7c3aed33 0%,transparent 40%),
-    #030712;
+    radial-gradient(circle at top left,#2563eb22 100%,transparent 100%),
+    radial-gradient(circle at bottom right,#7c3aed22 100%,transparent 100%),
+    linear-gradient(180deg,#030712,#0a1124);
 
-    z-index:-1;
+    z-index:-2;
 
 }
 
 /* ===========================
-   MAIN CONTAINER
+   Main Container
 =========================== */
 
 .container{
 
     width:100%;
-    height:100%;
+
+    height:100vh;
 
     display:flex;
 
@@ -69,100 +72,99 @@ body{
 
     align-items:center;
 
-    padding:20px;
+    padding:18px;
 
 }
 
 /* ===========================
-   CARD
+   Glass Card
 =========================== */
 
 .card{
 
-    width:min(92%,920px);
+    width:min(92%,900px);
 
-    max-height:90vh;
+    max-height:calc(100vh - 70px);
 
-    padding:32px 42px 80px;
-
-    text-align:center;
-
-    border-radius:24px;
-
-    background:rgba(255,255,255,0.06);
-
-    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.08);
 
     border:1px solid rgba(255,255,255,.12);
 
-    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    backdrop-filter:blur(18px);
+
+    border-radius:24px;
+
+    box-shadow:0 25px 70px rgba(240,100,100,.30);
+
+    padding:28px 40px;
+
+    text-align:center;
 
 }
 
 /* ===========================
-   LOGO
+   Logo
 =========================== */
 
 .logo{
 
     display:block;
 
-    width:80%;
+    width:100%;
 
-    max-width:520px;
+    max-width:420px;
 
-    height:220px;
+    height:auto;
 
-    margin:0 auto 18px auto;
+    margin:0 auto 18px;
 
-    mix-blend-mode:screen;
+}
 
-    filter:
-        brightness(1.00)
-        contrast(1.08)
-        saturate(0.8);
+.logo-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
 
 }
 
 /* ===========================
-   TITLE
+   Heading
 =========================== */
 
 h1{
 
-    font-size:clamp(2.2rem,4vw,3.4rem);
+    font-size:clamp(2rem,3vw,3rem);
 
     margin-bottom:14px;
 
-    font-weight:650;
+    font-weight:700;
 
 }
 
 /* ===========================
-   DESCRIPTION
+   Paragraphs
 =========================== */
 
 .card p{
 
-    max-width:760px;
-
-    margin:auto;
-
     color:#d1d5db;
 
-    line-height:1.6;
+    font-size:1rem;
 
-    font-size:clamp(1rem,1.4vw,1.15rem);
+    line-height:1.55;
 
 }
 
 /* ===========================
-   STATUS
+   Status
 =========================== */
 
 .status{
-
-    margin:22px 0;
 
     display:flex;
 
@@ -172,15 +174,17 @@ h1{
 
     gap:12px;
 
-    font-size:1.1rem;
+    margin:22px 0;
+
+    font-size:1.05rem;
 
 }
 
 .dot{
 
-    width:13px;
+    width:12px;
 
-    height:13px;
+    height:12px;
 
     border-radius:50%;
 
@@ -202,7 +206,7 @@ opacity:.4;
 
 50%{
 
-transform:scale(1.25);
+transform:scale(1.3);
 
 opacity:1;
 
@@ -219,34 +223,34 @@ opacity:.4;
 }
 
 /* ===========================
-   DIVIDER
+   Divider
 =========================== */
 
 .divider{
 
     height:1px;
 
-    background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.10);
 
-    margin:22px 0;
+    margin:20px 0;
 
 }
 
 /* ===========================
-   INFO
+   Information
 =========================== */
 
 .info{
 
     display:flex;
 
-    justify-content:space-around;
+    justify-content:space-evenly;
+
+    align-items:center;
 
     gap:30px;
 
-    margin-bottom:24px;
-
-    flex-wrap:wrap;
+    margin-bottom:22px;
 
 }
 
@@ -254,9 +258,7 @@ opacity:.4;
 
     color:#60a5fa;
 
-    margin-bottom:1px;
-
-    font-size:1.1rem;
+    margin-bottom:6px;
 
 }
 
@@ -267,14 +269,14 @@ opacity:.4;
 }
 
 /* ===========================
-   BUTTON
+   Button
 =========================== */
 
 button{
 
-    border:none;
+    padding:13px 34px;
 
-    padding:14px 34px;
+    border:none;
 
     border-radius:40px;
 
@@ -288,31 +290,31 @@ button{
 
     transition:.3s;
 
-    transform: translateY(-10px);
-
 }
 
 button:hover{
 
     background:#1d4ed8;
 
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 
     box-shadow:0 12px 30px rgba(37,99,235,.35);
 
 }
 
 /* ===========================
-   FOOTER
+   Footer
 =========================== */
 
 footer{
 
     position:fixed;
 
-    bottom:0px;
+    bottom:12px;
 
-    left:0;
+    left:50%;
+
+    transform:translateX(-50%);
 
     width:100%;
 
@@ -320,41 +322,41 @@ footer{
 
     color:#94a3b8;
 
-    font-size:.85rem;
+    font-size:.82rem;
 
 }
 
-/* ===========================
-   TABLETS
-=========================== */
+/* ===========================================================
+   TABLET
+=========================================================== */
 
-@media(max-width:992px){
+@media (max-width:992px){
 
 .card{
 
-width:94%;
+max-width:760px;
 
-padding:28px;
+padding:24px 28px;
 
 }
 
 .logo{
 
-max-width:430px;
+max-width:380px;
 
 }
 
 }
 
-/* ===========================
+/* ===========================================================
    MOBILE
-=========================== */
+=========================================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .container{
 
-padding:15px;
+padding:14px;
 
 }
 
@@ -362,13 +364,15 @@ padding:15px;
 
 width:100%;
 
-padding:22px;
+padding:20px;
+
+max-height:calc(100vh - 60px);
 
 }
 
 .logo{
 
-max-width:330px;
+max-width:260px;
 
 margin-bottom:14px;
 
@@ -376,23 +380,93 @@ margin-bottom:14px;
 
 h1{
 
-font-size:2rem;
+font-size:1.8rem;
+
+margin-bottom:10px;
 
 }
 
 .card p{
 
-font-size:.95rem;
+font-size:.92rem;
+
+line-height:1.45;
 
 }
 
 .status{
 
-flex-direction:column;
+margin:16px 0;
 
-gap:8px;
+font-size:.95rem;
 
-margin:18px 0;
+}
+
+.info{
+
+gap:18px;
+
+margin-bottom:18px;
+
+}
+
+.info h3{
+
+font-size:1rem;
+
+}
+
+.info p{
+
+font-size:.9rem;
+
+}
+
+button{
+
+padding:11px 28px;
+
+font-size:.95rem;
+
+}
+
+footer{
+
+bottom:6px;
+
+font-size:.72rem;
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:430px){
+
+.logo{
+
+max-width:210px;
+
+}
+
+h1{
+
+font-size:1.55rem;
+
+}
+
+.card{
+
+padding:16px;
+
+}
+
+.card p{
+
+font-size:.86rem;
 
 }
 
@@ -400,7 +474,9 @@ margin:18px 0;
 
 flex-direction:column;
 
-gap:20px;
+gap:12px;
+
+margin-bottom:16px;
 
 }
 
@@ -410,13 +486,19 @@ width:100%;
 
 }
 
+footer{
+
+font-size:.68rem;
+
 }
 
-/* ===========================
-   SMALL PHONES
-=========================== */
+}
 
-@media(max-width:430px){
+/* ===========================================================
+   SHORT HEIGHT SCREENS
+=========================================================== */
+
+@media (max-height:760px){
 
 .logo{
 
@@ -426,91 +508,47 @@ max-width:260px;
 
 h1{
 
-font-size:1.7rem;
+font-size:1.8rem;
+
+margin-bottom:8px;
 
 }
-
-.card p{
-
-font-size:.9rem;
-
-}
-
-button{
-
-font-size:.95rem;
-
-padding:12px;
-
-}
-
-}
-
-/* ===========================
-   SHORT LAPTOPS
-=========================== */
-
-@media(max-height:800px){
 
 .card{
 
-padding:22px 36px;
-
-max-height:92vh;
-
-}
-
-.logo{
-
-max-width:420px;
-
-margin-bottom:14px;
-
-}
-
-h1{
-
-font-size:2.2rem;
-
-margin-bottom:10px;
-
-}
-
-.card p{
-
-font-size:.95rem;
+padding:18px 24px;
 
 }
 
 .status{
 
-margin:16px 0;
+margin:14px 0;
 
 }
 
 .divider{
 
-margin:16px 0;
+margin:14px 0;
 
 }
 
 .info{
 
-margin-bottom:18px;
+margin-bottom:16px;
 
 }
 
 button{
 
-padding:12px 30px;
+padding:10px 28px;
 
 }
 
 footer{
 
-bottom:6px;
+font-size:.72rem;
 
-font-size:.75rem;
+bottom:4px;
 
 }
 
