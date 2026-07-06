@@ -1,7 +1,7 @@
 /* ===========================================================
    WEBSITE UNDER MAINTENANCE
    Version : Final
-   Author  : ChatGPT
+   Author  : Tushar Chavhan
    =========================================================== */
 
 *{
@@ -352,21 +352,32 @@ max-width:380px;
    MOBILE
 =========================================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px){
 
 .container{
 
 padding:14px;
 
+align-items: flex-start; /* Shifts card upwards on mobile */
+ 
+padding-top: 6vh;        /* Leaves clean space near the top notch */
+
+}
+
+/* This targets the logo area to pull the following text upward */
+.logo-wrapper {
+    margin-bottom: -0.01px;   /* Pulls text upward closer to the logo */
 }
 
 .card{
 
-width:100%;
+width:100%;    /* standard width */
 
-padding:20px;
+padding: 24px 20px;
 
-max-height:calc(80vh - 50px);
+max-width: 480px;  /* Limits expansion on wider mobile screens */
+
+max-height:none;  /* Prevents content from overflowing / clipping */
 
 }
 
@@ -380,9 +391,13 @@ margin-bottom:14px;
 
 h1{
 
-font-size:1.8rem;
+font-size:1.55rem;
 
-margin-bottom:10px;
+margin-bottom:8px;   /* Compresses vertical gap */
+
+margin-top: 0;  /* Removes extra header spacing */
+
+
 
 }
 
@@ -446,9 +461,17 @@ font-size:.72rem;
 
 @media (max-width:430px){
 
+.container {
+
+    padding-top: 5vh;        /* Shifting logic stays safe here */
+}
+
 .logo{
 
 max-width:210px;
+
+/*.logo-wrapper {
+    margin-bottom: -15px;  /*
 
 }
 
@@ -472,17 +495,16 @@ font-size:.86rem;
 
 .info{
 
-flex-direction:column;
+flex-direction:column;   /* Stacks Info items smoothly */
 
 gap:12px;
 
-margin-bottom:16px;
-
+margin-bottom:16px;  
 }
 
 button{
 
-width:100%;
+width:100%;     /* Easier to tap button on smaller phones */
 
 }
 
