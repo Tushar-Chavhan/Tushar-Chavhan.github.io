@@ -1,46 +1,184 @@
-# Tushar Chavhan Portfolio
+# 🚧 Website Under Maintenance
 
-This is a corrected static portfolio website for GitHub Pages. It uses only HTML, CSS, and JavaScript, so no build step is required.
+A modern, responsive **Website Under Maintenance** page built using **HTML5** and **CSS3**. The page features a clean glassmorphism design, animated background, responsive layout, and a professional maintenance message suitable for personal portfolios, business websites, or temporary downtime.
 
-## How to deploy on GitHub Pages
+---
 
-1. Extract this zip file.
-2. Upload these files to a GitHub repository.
-3. In GitHub, open `Settings` > `Pages`.
-4. Choose `Deploy from a branch`.
-5. Select the `main` branch and `/root`.
-6. Save.
+## 📸 Preview
 
-Your site will publish at a GitHub Pages URL after GitHub finishes deployment.
+> Replace the image below with a screenshot of your maintenance page.
 
-## Files
+![Website Preview](assets/preview.png)
 
-- `index.html`: website content
-- `css/style.css`: design and responsive layout
-- `js/app.js`: mobile menu, stat counter, and contact form settings
-- `assets/images/hero-network.png`: visual background used on the home section
-- `.nojekyll`: keeps GitHub Pages from treating the site as a Jekyll project
-- `CONTACT_SETUP.md`: exact steps for sending contact form requests to email and Google Sheets
+---
 
-## What you should edit later
+## ✨ Features
 
-Search in `index.html` for `Enter your text`. Replace those placeholder lines with your real information.
+- Modern Glassmorphism UI
+- Fully Responsive Design
+- Animated Background
+- Responsive Logo
+- Maintenance Status Indicator
+- Clean Typography
+- Mobile Friendly
+- Tablet Optimized
+- Desktop Optimized
+- CSS Animations
+- Pure HTML & CSS (No Frameworks)
+- Lightweight and Fast
 
-Suggested fields to update:
+---
 
-- Email
-- Phone number
-- LinkedIn URL
-- GitHub URL
-- Resume PDF link
-- Actual certification status
-- Project links and descriptions
-- Current job title, company, and years of experience
+## 📂 Project Structure
 
-## Contact form
+```
+Website-Under-Maintenance/
+│
+├── assets/
+│   ├── logo.png
+│   └── preview.png
+│
+├── index.html
+├── style.css
+├── README.md
+└── LICENSE (Optional)
+```
 
-The form is ready for both Formspree email delivery and Google Forms/Sheets storage, but you must paste your own service values in `js/app.js`.
+---
 
-Open `CONTACT_SETUP.md` and follow the steps. After setup, you will receive contact requests in your email and also see them inside your Google Form responses or linked Google Sheet. The contact form includes name, optional email, mobile number, and message.
+## 🚀 Getting Started
 
-The current project already includes known details from your original zip: Tushar Chavhan, telecom and cloud engineering, 4G EPC, 5G Core, Azure, Kubernetes, Terraform, Linux, Python, OpenShift, DevOps, and networking.
+### Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/<repository-name>.git
+```
+
+### Open the Project
+
+Simply open:
+
+```
+index.html
+```
+
+in your preferred web browser.
+
+No installation or dependencies are required.
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+
+---
+
+## 📱 Responsive Support
+
+The page is optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+## 🎨 Design Features
+
+- Glassmorphism Card
+- Gradient Background
+- Responsive Typography
+- Animated Status Indicator
+- Flexible Layout
+- Clean User Interface
+
+---
+
+## 📄 Customization
+
+You can easily customize:
+
+- Logo
+- Heading
+- Maintenance Message
+- Status Text
+- Expected Completion Time
+- Colors
+- Fonts
+- Background
+- Button Text
+- Footer
+
+---
+
+## 📜 Browser Compatibility
+
+Tested on:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Brave
+- Opera
+
+---
+
+## 💡 Use Cases
+
+This template is suitable for:
+
+- Personal Portfolio
+- Company Website
+- Server Maintenance
+- Product Launch
+- Website Upgrade
+- Scheduled Downtime
+- Temporary Landing Page
+
+---
+
+## 📌 Future Improvements
+
+- Dark / Light Theme Toggle
+- Countdown Timer
+- Social Media Links
+- Email Notification Form
+- Contact Information
+- Multi-language Support
+
+---
+
+## 👨‍💻 Author
+
+**Tushar Chavhan**
+
+---
+
+## 📄 Copyright & Usage
+
+Copyright © 2026 Tushar Chavhan. All Rights Reserved.
+
+This repository is provided for viewing and evaluation purposes only.
+
+No permission is granted to:
+
+- Copy the source code
+- Reuse the design
+- Modify the project
+- Redistribute the files
+- Use any part of this project in personal or commercial work
+- Create derivative works
+
+without prior written permission from the author.
+
+Unauthorized use, reproduction, or distribution of this project, in whole or in part, is strictly prohibited.
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
