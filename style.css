@@ -1,9 +1,17 @@
 /* ===========================================================
-   WEBSITE UNDER MAINTENANCE
-   Version : Final
-   Author  : Tushar Chavhan
-   =========================================================== */
+   Project    : Website Under Maintenance
+   File       : style.css
+   Version    : 1.0.0
+   Author     : Tushar Chavhan
+   Created    : July 2026
+   Description: Main stylesheet for the Website Under
+                Maintenance page. Contains layout,
+                responsive design, animations, and styling.
 
+   Copyright © 2026 Tushar Chavhan.
+   All Rights Reserved.
+   Unauthorized copying or reproduction prohibited.
+=========================================================== */
 *{
     margin:0;
     padding:0;
